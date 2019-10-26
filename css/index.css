@@ -193,6 +193,9 @@ header nav {
   background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
   background-size: auto 70%;
 }
+.welcome h2 {
+  margin: 0 0 30px 0;
+}
 .welcome p {
   font-size: 2.2rem;
   line-height: 3rem;
@@ -231,6 +234,7 @@ header nav {
 .products .categories {
   display: flex;
   justify-content: space-between;
+  padding: 50px 0 0 0;
 }
 .products .categories .item {
   display: flex;
@@ -251,7 +255,7 @@ header nav {
   border-bottom: 1px solid #ccc;
 }
 .gallery h2 {
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 }
 .gallery .references {
   display: flex;
