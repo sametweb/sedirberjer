@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: "optima-regular";
+  src: url("../fonts/Optima-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima-bold";
+  src: url("../fonts/Optima-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "optima-regular";
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+#root {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+header .logo {
+  width: 35%;
+}
+header nav {
+  font-family: "optima-regular";
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.welcome {
+  margin: 0 0 60px 0;
+  padding: 0 0 60px 0;
+  border-bottom: 1px solid #ccc;
+}
+.welcome p {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding: 20px 0 10px;
+  width: 70%;
+}
+.products {
+  margin: 0 0 60px 0;
+  padding: 0 0 60px 0;
+  border-bottom: 1px solid #ccc;
+}
+.products h2 {
+  margin: 0 0 30px 0;
+}
+.products .categories {
+  display: flex;
+  justify-content: space-between;
+}
+.products .categories .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .categories .item img {
+  margin: 0 0 30px 0;
+  opacity: 0.7;
+}
+.products .categories .item img:hover {
+  opacity: 1;
+}
+.gallery {
+  margin: 0 0 60px 0;
+  padding: 0 0 60px 0;
+  border-bottom: 1px solid #ccc;
+}
+.gallery h2 {
+  margin: 0 0 30px 0;
+}
+.gallery .references {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery .references .item {
+  width: 30%;
+  margin: 0 0 30px 0;
+  max-height: 182px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery .references .item img {
+  width: 100%;
+  opacity: 0.7;
+}
+.gallery .references .item img:hover {
+  opacity: 1;
+}

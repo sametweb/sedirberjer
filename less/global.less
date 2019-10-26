@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "optima-regular";
+  src: url("../fonts/Optima-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima-bold";
+  src: url("../fonts/Optima-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "optima-regular";
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+}
+
+a {
+  color: @main-text-color;
+  text-decoration: none;
+}
+
+#root {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 30px;
+}
