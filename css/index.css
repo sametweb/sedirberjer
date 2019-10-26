@@ -206,6 +206,23 @@ header nav {
   padding: 20px 0 10px;
   width: 70%;
 }
+.welcome .phone {
+  display: flex;
+  justify-content: flex-start;
+}
+.welcome .phone span {
+  display: flex;
+  align-items: center;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  padding: 20px 60px 20px 30px;
+  margin: 0 10px 0 0;
+}
+.welcome .phone span i {
+  margin: 0 20px 0 0;
+  font-size: 3rem;
+}
 .products {
   margin: 0 0 60px 0;
   padding: 0 0 60px 0;
