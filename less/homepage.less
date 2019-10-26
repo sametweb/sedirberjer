@@ -1,7 +1,9 @@
 .welcome {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
-  border-bottom: 1px solid #ccc;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
+  border-bottom: 1px #ccc solid;
+  background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
+  background-size: auto 70%;
 
   p {
     font-size: 2.2rem;
@@ -20,6 +22,10 @@
       border-radius: 30px;
       padding: 20px 60px 20px 30px;
       margin: 0 10px 0 0;
+      transition: background 0.5s;
+      &:hover {
+        background: #444;
+      }
       i {
         margin: 0 20px 0 0;
         font-size: 3rem;
@@ -29,8 +35,8 @@
 }
 
 .products {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
   h2 {
     margin: 0 0 30px 0;
@@ -56,8 +62,8 @@
 }
 
 .gallery {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
   h2 {
     margin: 0 0 30px 0;
@@ -69,12 +75,13 @@
     .item {
       width: 30%;
       margin: 0 0 30px 0;
-      max-height: 182px;
       overflow: hidden;
       position: relative;
+      border-radius: 10px;
       img {
         width: 100%;
-        opacity: 0.7;
+        opacity: 0.8;
+
         &:hover {
           opacity: 1;
         }

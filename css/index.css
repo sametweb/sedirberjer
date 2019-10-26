@@ -138,26 +138,15 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-  transition: all 0.5s ease-in-out;
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "optima-regular";
   font-size: 62.5%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "optima-regular";
-}
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 4rem;
@@ -174,6 +163,9 @@ a {
   color: #000;
   text-decoration: none;
 }
+img {
+  transition: all 0.5s ease-in-out;
+}
 #root {
   max-width: 1368px;
   margin: 0 auto;
@@ -183,22 +175,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 60px 0;
+  margin: 0 0 100px 0;
 }
 header .logo {
   width: 35%;
 }
 header nav {
-  font-family: "optima-regular";
   width: 45%;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
 .welcome {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
-  border-bottom: 1px solid #ccc;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
+  border-bottom: 1px #ccc solid;
+  background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
+  background-size: auto 70%;
 }
 .welcome p {
   font-size: 2.2rem;
@@ -218,14 +211,18 @@ header nav {
   border-radius: 30px;
   padding: 20px 60px 20px 30px;
   margin: 0 10px 0 0;
+  transition: background 0.5s;
+}
+.welcome .phone span:hover {
+  background: #444;
 }
 .welcome .phone span i {
   margin: 0 20px 0 0;
   font-size: 3rem;
 }
 .products {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
 }
 .products h2 {
@@ -249,8 +246,8 @@ header nav {
   opacity: 1;
 }
 .gallery {
-  margin: 0 0 60px 0;
-  padding: 0 0 60px 0;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
 }
 .gallery h2 {
@@ -264,13 +261,13 @@ header nav {
 .gallery .references .item {
   width: 30%;
   margin: 0 0 30px 0;
-  max-height: 182px;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 .gallery .references .item img {
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .gallery .references .item img:hover {
   opacity: 1;
