@@ -3,13 +3,38 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 0 100px 0;
+  @media @1024 {
+    flex-direction: column;
+  }
   .logo {
     width: 35%;
+    min-width: 375px;
+    @media @1024 {
+      margin: 0 0 50px 0;
+    }
   }
   nav {
     width: 45%;
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+    @media @1200 {
+      width: 55%;
+    }
+    @media @1024 {
+      width: 80%;
+    }
+    @media @768 {
+      width: 100%;
+    }
+    @media @500 {
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      @media @500 {
+        padding: 15px;
+      }
+    }
   }
 }

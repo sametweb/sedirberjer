@@ -126,23 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@font-face {
-  font-family: "optima-regular";
-  src: url("../fonts/Optima-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "optima-bold";
-  src: url("../fonts/Optima-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: "optima-regular";
+  font-family: "Marcellus", serif;
   font-size: 62.5%;
 }
 h1 {
@@ -177,8 +165,19 @@ header {
   align-items: center;
   margin: 0 0 100px 0;
 }
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+}
 header .logo {
   width: 35%;
+  min-width: 375px;
+}
+@media (max-width: 1024px) {
+  header .logo {
+    margin: 0 0 50px 0;
+  }
 }
 header nav {
   width: 45%;
@@ -186,12 +185,53 @@ header nav {
   justify-content: space-between;
   font-size: 2rem;
 }
+@media (max-width: 1200px) {
+  header nav {
+    width: 55%;
+  }
+}
+@media (max-width: 1024px) {
+  header nav {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 15px;
+  }
+}
+footer p {
+  font-size: 2rem;
+  text-align: center;
+}
 .welcome {
   margin: 0 0 100px 0;
   padding: 0 0 100px 0;
   border-bottom: 1px #ccc solid;
   background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
   background-size: auto 70%;
+}
+@media (max-width: 1024px) {
+  .welcome {
+    background: none;
+  }
+}
+@media (max-width: 500px) {
+  .welcome {
+    margin: 0 0 50px 0;
+    padding: 0 0 30px 0;
+  }
 }
 .welcome h2 {
   margin: 0 0 30px 0;
@@ -202,9 +242,34 @@ header nav {
   padding: 20px 0 10px;
   width: 70%;
 }
+@media (max-width: 1200px) {
+  .welcome p {
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .welcome p {
+    width: 100%;
+  }
+}
 .welcome .phone {
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 1024px) {
+  .welcome .phone {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  .welcome .phone {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .welcome .phone {
+    padding: 40px 0 10px;
+  }
 }
 .welcome .phone span {
   display: flex;
@@ -223,10 +288,24 @@ header nav {
   margin: 0 20px 0 0;
   font-size: 3rem;
 }
+@media (max-width: 768px) {
+  .welcome .phone span {
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0 0 30px 0;
+  }
+}
 .products {
   margin: 0 0 100px 0;
   padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
+}
+@media (max-width: 500px) {
+  .products {
+    margin: 0 0 50px 0;
+    padding: 0 0 50px 0;
+  }
 }
 .products h2 {
   margin: 0 0 30px 0;
@@ -236,15 +315,45 @@ header nav {
   justify-content: space-between;
   padding: 50px 0 0 0;
 }
+@media (max-width: 1024px) {
+  .products .categories {
+    flex-wrap: wrap;
+  }
+}
 .products .categories .item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .products .categories .item {
+    width: 50%;
+  }
+  .products .categories .item:first-child,
+  .products .categories .item:nth-child(2) {
+    margin: 0 0 90px 0;
+  }
+}
+@media (max-width: 768px) {
+  .products .categories .item {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 500px) {
+  .products .categories .item {
+    width: 100%;
+    margin: 0 0 90px 0;
+  }
+}
 .products .categories .item img {
   margin: 0 0 30px 0;
   opacity: 0.7;
+}
+@media (max-width: 768px) {
+  .products .categories .item img {
+    max-width: 90%;
+  }
 }
 .products .categories .item img:hover {
   opacity: 1;
@@ -253,6 +362,12 @@ header nav {
   margin: 0 0 100px 0;
   padding: 0 0 100px 0;
   border-bottom: 1px solid #ccc;
+}
+@media (max-width: 500px) {
+  .gallery {
+    margin: 0 0 50px 0;
+    padding: 0 0 50px 0;
+  }
 }
 .gallery h2 {
   margin: 0 0 50px 0;
@@ -268,6 +383,17 @@ header nav {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .gallery .references .item {
+    width: 48%;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .gallery .references .item {
+    width: 100%;
+  }
 }
 .gallery .references .item img {
   width: 100%;
