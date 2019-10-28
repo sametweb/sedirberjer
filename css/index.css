@@ -241,6 +241,7 @@ footer p {
   line-height: 3rem;
   padding: 20px 0 10px;
   width: 70%;
+  left: none;
 }
 @media (max-width: 1200px) {
   .welcome p {
