@@ -221,13 +221,6 @@ footer p {
   margin: 0 0 100px 0;
   padding: 0 0 100px 0;
   border-bottom: 1px #ccc solid;
-  background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
-  background-size: auto 70%;
-}
-@media (max-width: 1024px) {
-  .welcome {
-    background: none;
-  }
 }
 @media (max-width: 500px) {
   .welcome {
@@ -247,7 +240,7 @@ footer p {
 }
 @media (max-width: 1200px) {
   .welcome p {
-    width: 60%;
+    width: 65%;
   }
 }
 @media (max-width: 1024px) {
@@ -297,6 +290,15 @@ footer p {
     text-align: center;
     font-size: 3.5rem;
     margin: 0 0 30px 0;
+  }
+}
+.home {
+  background: url("../img/headline-chair.jpg") no-repeat right 100px top 25px;
+  background-size: auto 70%;
+}
+@media (max-width: 1024px) {
+  .home {
+    background: none;
   }
 }
 .products {
@@ -437,4 +439,60 @@ footer p {
 }
 .welcome ul li {
   line-height: 4rem;
+}
+.contact-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
+}
+@media (max-width: 1024px) {
+  .contact-area {
+    flex-wrap: wrap;
+  }
+}
+.contact-area form {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  font-size: 2rem;
+  margin: 0 20px 0 0;
+}
+@media (max-width: 1024px) {
+  .contact-area form {
+    width: 100%;
+  }
+}
+.contact-area form label {
+  margin: 0 0 0px 0;
+}
+.contact-area form input,
+.contact-area form textarea,
+.contact-area form button {
+  margin: 0 0 15px 0;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.contact-area form input {
+  height: 40px;
+}
+.contact-area form button {
+  width: 50%;
+  border: 0;
+  height: 40px;
+  align-self: center;
+  background: #ddd;
+  color: #000;
+  font-family: "Marcellus";
+  font-size: 1.6rem;
+}
+.contact-area .map {
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .contact-area .map {
+    margin: 100px 0 0 0;
+    width: 100%;
+  }
 }

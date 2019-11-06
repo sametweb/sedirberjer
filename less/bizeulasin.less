@@ -1,0 +1,52 @@
+.contact-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
+  @media @1024 {
+    flex-wrap: wrap;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    font-size: 2rem;
+    margin: 0 20px 0 0;
+    @media @1024 {
+      width: 100%;
+    }
+
+    label {
+      margin: 0 0 0px 0;
+    }
+    input,
+    textarea,
+    button {
+      margin: 0 0 15px 0;
+      font-size: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    input {
+      height: 40px;
+    }
+    button {
+      width: 50%;
+      border: 0;
+      height: 40px;
+      align-self: center;
+      background: #ddd;
+      color: @main-text-color;
+      font-family: "Marcellus";
+      font-size: 1.6rem;
+    }
+  }
+  .map {
+    text-align: center;
+    @media @1024 {
+      margin: 100px 0 0 0;
+      width: 100%;
+    }
+  }
+}
