@@ -420,7 +420,7 @@ footer p {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .references .ref .info h3 {
