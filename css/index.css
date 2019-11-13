@@ -195,7 +195,7 @@ img {
   max-width: 100%;
   height: auto;
   max-height: 100%;
-  padding: 20px;
+  padding: 20px 0;
 }
 header {
   display: flex;
@@ -453,9 +453,22 @@ footer p {
   max-height: 350px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .references .ref {
+    margin: 0 0 40px 0;
+    max-height: none;
+  }
+}
 .references .ref img {
   width: 48%;
+  max-height: 350px;
+  object-fit: cover;
   cursor: zoom-in;
+}
+@media (max-width: 768px) {
+  .references .ref img {
+    width: 100%;
+  }
 }
 .references .ref .info {
   width: 50%;
