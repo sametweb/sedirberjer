@@ -388,6 +388,7 @@ footer p {
 @media (max-width: 768px) {
   .products .categories .item img {
     max-width: 90%;
+    opacity: 1;
   }
 }
 .products .categories .item img:hover {
@@ -435,6 +436,11 @@ footer p {
   opacity: 0.8;
   cursor: zoom-in;
 }
+@media (max-width: 768px) {
+  .gallery .references .item img {
+    opacity: 1;
+  }
+}
 .gallery .references .item img:hover {
   opacity: 1;
 }
@@ -462,6 +468,7 @@ footer p {
 @media (max-width: 768px) {
   .references .ref img {
     width: 100%;
+    margin: 0 0 1rem 0;
   }
 }
 .references .ref .info {
@@ -470,6 +477,11 @@ footer p {
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .references .ref .info {
+    width: 100%;
+  }
 }
 .references .ref .info h3 {
   margin: 0 0 5px 0;
@@ -480,6 +492,9 @@ footer p {
 .references .ref .info .location {
   margin: 0 0 15px 0;
   color: #666;
+}
+.references .ref .info .p {
+  line-height: 2.4rem;
 }
 .welcome ul {
   font-size: 2rem;
