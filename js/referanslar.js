@@ -1,20 +1,20 @@
 //prettier-ignore
 const images = [
-    { title: 'Avusturya', description: 'Bu kafe Avusturyada', location: 'Avusturya', path: `img/referanslar/avusturya-restoran-2`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/avusturya-restoran`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/black-c`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/burgundy-sedir`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/cafe-chester-koltuk`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/cafe-chester`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/cafe-sandalye-sedir`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/demir-sedir-masa`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/kofteci-ramiz`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/lounge-sedir`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/okey-masasi`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/restoran-sandalye-masa`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/sedir-sandalye-masa`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/tahta-masa`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/yesil-sedir`, otherImages: [] }
+    { title: 'Avusturya', description: 'Bu kafe Avusturyada', location: 'Avusturya', path: `img/referanslar/avusturya-restoran-2.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/avusturya-restoran.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/black-c.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/burgundy-sedir.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/cafe-chester-koltuk.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/cafe-chester.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/cafe-sandalye-sedir.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/demir-sedir-masa.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/kofteci-ramiz.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/lounge-sedir.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/okey-masasi.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/restoran-sandalye-masa.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/sedir-sandalye-masa.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/tahta-masa.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/yesil-sedir.jpeg`, otherImages: [] }
   ];
 
 /*
@@ -35,9 +35,6 @@ let references = document.querySelector(".references");
 
 const createRef = refObj => {
   let ref = document.createElement("div");
-  let picture = document.createElement("picture");
-  let sourceWEBP = document.createElement("source");
-  let sourceJPEG = document.createElement("source");
   let img = document.createElement("img");
   let info = document.createElement("div");
   let title = document.createElement("h3");
@@ -53,24 +50,17 @@ const createRef = refObj => {
   desc.classList.add("p");
   overlay.classList.add("overlay");
 
-  img.src = `${refObj.path}.jpeg`;
-  fullscreenImg.src = `${refObj.path}.jpeg`;
+  img.src = refObj.path;
+  fullscreenImg.src = refObj.path;
   title.textContent = refObj.title;
   location.textContent = refObj.location;
   desc.textContent = refObj.description;
   quitFullScreen.textContent = "X";
-  sourceWEBP.type = "image/webp";
-  sourceWEBP.srcset = `${refObj.path}.webp`;
-  sourceJPEG.type = "image/jpeg";
-  sourceJPEG.srcset = `${refObj.path}.jpeg`;
 
-  picture.appendChild(sourceWEBP);
-  picture.appendChild(sourceJPEG);
-  picture.appendChild(img);
   info.appendChild(title);
   info.appendChild(location);
   info.appendChild(desc);
-  ref.appendChild(picture);
+  ref.appendChild(img);
   ref.appendChild(info);
 
   ref.addEventListener("click", function() {
