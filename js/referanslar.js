@@ -63,7 +63,7 @@ const createRef = refObj => {
   ref.appendChild(img);
   ref.appendChild(info);
 
-  ref.addEventListener("click", function() {
+  img.addEventListener("click", function() {
     overlay.appendChild(quitFullScreen);
     overlay.appendChild(fullscreenImg);
     document.body.prepend(overlay);

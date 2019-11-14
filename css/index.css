@@ -249,6 +249,9 @@ header nav {
     padding: 15px;
   }
 }
+footer {
+  padding: 20px 0;
+}
 footer p {
   font-size: 2rem;
   text-align: center;
