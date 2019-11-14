@@ -450,14 +450,17 @@ footer p {
     max-height: none;
   }
 }
-.references .ref img {
+.references .ref picture {
   width: 48%;
+}
+.references .ref picture img {
+  width: 100%;
   max-height: 350px;
   object-fit: cover;
   cursor: zoom-in;
 }
 @media (max-width: 768px) {
-  .references .ref img {
+  .references .ref picture img {
     width: 100%;
   }
 }
