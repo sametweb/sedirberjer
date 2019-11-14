@@ -25,8 +25,10 @@ const createRef = refObj => {
 
   item.classList.add("item");
   img.src = refObj.imgURL;
+  img.title = refObj.title;
   originalImg.src = refObj.originalImgURL;
-  img.alt = refObj.title;
+  originalImg.title = refObj.title;
+
   overlay.classList.add("overlay");
   quitFullScreen.textContent = "X";
 
