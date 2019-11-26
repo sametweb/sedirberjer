@@ -12,6 +12,13 @@ const images = [
     { title: 'Köfteci Ramiz', description: '', location: 'Metroport AVM Bahçelievler, İstanbul', path: `img/referanslar/kofteci-ramiz.jpeg`, otherImages: [] },
     { title: 'Köfteci Ramiz', description: '', location: 'Metroport AVM Bahçelievler, İstanbul', path: `img/referanslar/sedir-sandalye-masa.jpeg`, otherImages: [] },
     { title: 'Sultahahmetli', description: `Başakşehir'in nadide mekanlarından Sultanahmetli'de chester koltuk, cafe masaları ve okey masaları tarafımızdan üretilmiştir.`, location: 'Başakşehir, İstanbul', path: `img/referanslar/tahta-masa.jpeg`, otherImages: [] },
+    { title: 'Akgün Otel Teras Cafe', description: '', location: 'Fatih, İstanbul', path: 'img/referanslar/akgun-otel-teras-cafe-fatih-istanbul.jpeg', otherImages: [] },
+    { title: 'Akgün Otel Teras Cafe', description: '', location: 'Fatih, İstanbul', path: 'img/referanslar/akgun-otel-teras-cafe.jpeg', otherImages: [] },
+    { title: 'David People İsfanbul AVM', description: '', location: 'Eyüp, İstanbul', path: 'img/referanslar/david-people-isfanbul-avm-eyup-istanbul.jpeg', otherImages: [] },
+    { title: 'HopSack Game', description: '', location: 'Tekirdağ', path: 'img/referanslar/HopSack-game-tekirdag.jpeg', otherImages: [] },
+    { title: 'Kafes Kafe', description: '', location: 'Haliç, İstanbul', path: 'img/referanslar/kafes-kafe-halic-istanbul.jpeg', otherImages: [] },
+    { title: 'Son Ağa Nargile Cafe', description: '', location: 'Esenler, İstanbul', path: 'img/referanslar/son-aga-nargile-cafe-esenler-istanbul.jpeg', otherImages: [] },
+    { title: 'Zoom Bahçe', description: '', location: 'Mecidiyeköy, İstanbul', path: 'img/referanslar/zoom-bahce-mecidiyekoy-istanbul.jpeg', otherImages: [] },
     { title: '', description: '', location: '', path: `img/referanslar/okey-masasi.jpeg`, otherImages: [] }
   ];
 
