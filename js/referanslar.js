@@ -2,34 +2,18 @@
 const images = [
     { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran-2.jpeg`, otherImages: [] },
     { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran.jpeg`, otherImages: [] },
+    { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/yesil-sedir.jpeg`, otherImages: [] },
     { title: 'Bossuite Hotel Maltepe', description: 'Otelin girişindeki cafe bölümünde C sedir, tekli berjer ve cafe masası ürünleri.', location: 'Maltepe, İstanbul', path: `img/referanslar/black-c.jpeg`, otherImages: [] },
     { title: 'Bossuite Hotel Maltepe', description: 'Otelin girişindeki cafe bölümünde C sedir, tekli berjer ve cafe masası ürünleri.', location: 'Maltepe, İstanbul', path: `img/referanslar/burgundy-sedir.jpeg`, otherImages: [] },
     { title: 'Sultahahmetli', description: `Başakşehir'in nadide mekanlarından Sultanahmetli'de chester koltuk, cafe masaları ve okey masaları tarafımızdan üretilmiştir.`, location: 'Başakşehir, İstanbul', path: `img/referanslar/cafe-chester-koltuk.jpeg`, otherImages: [] },
     { title: 'Sultahahmetli', description: `Başakşehir'in nadide mekanlarından Sultanahmetli'de chester koltuk, cafe masaları ve okey masaları tarafımızdan üretilmiştir.`, location: 'Başakşehir, İstanbul', path: `img/referanslar/cafe-chester.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/cafe-sandalye-sedir.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/demir-sedir-masa.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/kofteci-ramiz.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/lounge-sedir.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/okey-masasi.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/restoran-sandalye-masa.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/sedir-sandalye-masa.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/tahta-masa.jpeg`, otherImages: [] },
-    { title: '', description: '', location: '', path: `img/referanslar/yesil-sedir.jpeg`, otherImages: [] }
+    { title: 'DoQka Restaurant & Hookah Lounge', description: '', location: 'Sarıyer, İstanbul', path: `img/referanslar/cafe-sandalye-sedir.jpeg`, otherImages: [] },
+    { title: 'Antik Teras Cafe', description: '', location: 'Yakuplu, İstanbul', path: `img/referanslar/demir-sedir-masa.jpeg`, otherImages: [] },
+    { title: 'Köfteci Ramiz', description: '', location: 'Metroport AVM Bahçelievler, İstanbul', path: `img/referanslar/kofteci-ramiz.jpeg`, otherImages: [] },
+    { title: 'Köfteci Ramiz', description: '', location: 'Metroport AVM Bahçelievler, İstanbul', path: `img/referanslar/sedir-sandalye-masa.jpeg`, otherImages: [] },
+    { title: 'Sultahahmetli', description: `Başakşehir'in nadide mekanlarından Sultanahmetli'de chester koltuk, cafe masaları ve okey masaları tarafımızdan üretilmiştir.`, location: 'Başakşehir, İstanbul', path: `img/referanslar/tahta-masa.jpeg`, otherImages: [] },
+    { title: '', description: '', location: '', path: `img/referanslar/okey-masasi.jpeg`, otherImages: [] }
   ];
-
-/*
-          <div class="ref">
-            <img src="img/refs/original/JPEG/ref1.jpg" alt="Referans 1" />
-            <div class="info">
-              <h3>Bilmem ne kafe</h3>
-              <p class="location">Berlin, Germany</p>
-              <p class="desc">
-                Bilmem ne kafe Berlin'in islek bir caddesinde populer nargile
-                kafelerinden bir tanesi.
-              </p>
-            </div>
-          </div>
-  */
 
 let references = document.querySelector(".references");
 
@@ -79,7 +63,7 @@ images.forEach(item => references.appendChild(createRef(item)));
 
 let allImages = document.querySelectorAll(".references img");
 
-setTimeout(
+let timeout = setTimeout(
   () =>
     allImages.forEach(
       img =>
