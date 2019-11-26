@@ -19,6 +19,8 @@ const images = [
     { title: 'Kafes Kafe', description: '', location: 'Haliç, İstanbul', path: 'img/referanslar/kafes-kafe-halic-istanbul.jpeg', otherImages: [] },
     { title: 'Son Ağa Nargile Cafe', description: '', location: 'Esenler, İstanbul', path: 'img/referanslar/son-aga-nargile-cafe-esenler-istanbul.jpeg', otherImages: [] },
     { title: 'Zoom Bahçe', description: '', location: 'Mecidiyeköy, İstanbul', path: 'img/referanslar/zoom-bahce-mecidiyekoy-istanbul.jpeg', otherImages: [] },
+    { title: '[Restoran]', description: '', location: 'Tekirdağ', path: `img/referanslar/isimsiz-tekirdag.jpeg`, otherImages: [] },
+    { title: '[Restoran]', description: '', location: 'Tekirdağ', path: `img/referanslar/isimsiz-tekirdag-2.jpeg`, otherImages: [] },
     { title: '', description: '', location: '', path: `img/referanslar/okey-masasi.jpeg`, otherImages: [] }
   ];
 
