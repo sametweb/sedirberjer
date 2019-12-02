@@ -1,8 +1,8 @@
 //prettier-ignore
 const images = [
-    { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran-2.jpeg`, otherImages: [] },
-    { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran.jpeg`, otherImages: [] },
-    { title: '[Restoran]', description: `Avusturya'nın Graz şehrinde mekan isminin yayınlanmasını istemeyen bir müşterimiz.`, location: 'Graz, Avusturya', path: `img/referanslar/yesil-sedir.jpeg`, otherImages: [] },
+    { title: 'Forno Antico', description: ``, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran-2.jpeg`, otherImages: [] },
+    { title: 'Forno Antico', description: ``, location: 'Graz, Avusturya', path: `img/referanslar/avusturya-restoran.jpeg`, otherImages: [] },
+    { title: 'Forno Antico', description: ``, location: 'Graz, Avusturya', path: `img/referanslar/yesil-sedir.jpeg`, otherImages: [] },
     { title: 'Bossuite Hotel Maltepe', description: 'Otelin girişindeki cafe bölümünde C sedir, tekli berjer ve cafe masası ürünleri.', location: 'Maltepe, İstanbul', path: `img/referanslar/black-c.jpeg`, otherImages: [] },
     { title: 'Bossuite Hotel Maltepe', description: 'Otelin girişindeki cafe bölümünde C sedir, tekli berjer ve cafe masası ürünleri.', location: 'Maltepe, İstanbul', path: `img/referanslar/burgundy-sedir.jpeg`, otherImages: [] },
     { title: 'Sultahahmetli', description: `Başakşehir'in nadide mekanlarından Sultanahmetli'de chester koltuk, cafe masaları ve okey masaları tarafımızdan üretilmiştir.`, location: 'Başakşehir, İstanbul', path: `img/referanslar/cafe-chester-koltuk.jpeg`, otherImages: [] },
